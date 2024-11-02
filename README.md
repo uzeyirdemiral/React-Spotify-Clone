@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Spotify Clone 🎶
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, Spotify API'sini kullanarak temel bir Spotify müzik çalar uygulaması geliştirmeyi amaçlamaktadır. Kullanıcılar Spotify hesapları ile giriş yapabilir ve çeşitli müzik bilgilerini görüntüleyebilir.
 
-## Available Scripts
+## Özellikler
 
-In the project directory, you can run:
+- Spotify hesabı ile giriş yapma
+- Kullanıcının en son dinledikleri şarkıları görme
+- Çalma durumu ve çalma listesi bilgilerini görüntüleme
+- Şarkıları oynatma ve duraklatma
 
-### `npm start`
+## Canlı Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Projenin canlı demosuna [buradan](https://react-spotify-clonee.netlify.app/) ulaşabilirsiniz.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Kullanılan Teknolojiler
 
-### `npm test`
+- **React**: Kullanıcı arayüzünü oluşturmak için
+- **Styled-components**: Bileşen tabanlı stil için
+- **Spotify API**: Müzik verilerine erişim ve kontrol için
+- **Netlify**: Projenin yayına alınması için
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Kurulum
 
-### `npm run build`
+Projeyi yerel ortamınızda çalıştırmak için şu adımları takip edebilirsiniz:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Projeyi klonlayın:
+    ```bash
+    git clone https://github.com/uzeyirdemiral/React-Spotify-Clone.git
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Proje dizinine gidin:
+    ```bash
+    cd React-Spotify-Clone
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Gerekli bağımlılıkları yükleyin:
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+4. **Spotify Client ID ve Redirect URI'yi Güncelleyin:**
+   - `src/components/Login.jsx` dosyasını açın ve aşağıdaki kısımları kendi bilgilerinize göre değiştirin:
+     ```javascript
+     const client_id = "your_spotify_client_id";
+     const redirect_uri = "http://localhost:3000"; // veya Netlify adresiniz
+     ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Geliştirme sunucusunu başlatın:
+    ```bash
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine giderek uygulamayı görüntüleyebilirsiniz.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Kullanım
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Spotify Bağlantısı**: Uygulamayı açtığınızda, **Connect Spotify** butonuna tıklayarak Spotify hesabınıza bağlanabilirsiniz.
+- **Müzik Bilgisi Görüntüleme**: Giriş yaptıktan sonra kullanıcı bilgilerinizi, en son dinlediklerinizi ve mevcut çalma durumunuzu görebilirsiniz.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Katkıda Bulunanlar
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Üzeyir Demiral**
 
-### Code Splitting
+## Lisans
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bu proje MIT lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına göz atabilirsiniz.
