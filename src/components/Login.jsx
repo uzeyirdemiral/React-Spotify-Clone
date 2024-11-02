@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function Login() {
   const handleClick = () => {
     const client_id = "5fcaefe6f9394b5f9f1528837a3d22ac";
-    const redirect_uri = "http://localhost:3000/";
+    const redirect_uri = "https://react-spotify-clonee.netlify.app/";
     const api_uri = "https://accounts.spotify.com/authorize";
     const scope = [
       "user-read-private",
